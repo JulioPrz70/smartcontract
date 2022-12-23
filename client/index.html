@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Monkey Code Lab - Contratos</title>
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-body rounded-0 mb-4 bg-dark">
+                    <h1>Monkey CL</h1>
+                    <h6 class="text-muted">Contratos Inteligentes. o Nombre Cliente</h6>
+                    <span class="material-symbols-outlined d-flex" >
+                        wallet                        
+                        <h6>&nbsp Cartera Digital</h6>
+                    </span>
+                    <span id="account"></span>
+                </div>
+
+                <form class="card card-body bg-dark rounded-0" id="taskForm">
+                    <h4>Guardar una tarea</h4>
+                    <input type="text" name="title" placeholder="Titulo"
+                        class="form-control bg-dark text-white rounded-0 border-0 my-4">
+
+                    <textarea rows="2" name="description"
+                        class="form-control bg-dark text-white rounded-0 border-0 my-4"
+                        placeholder="Descripción"></textarea>
+
+                    <button class="btn btn-primary">
+                        Guardar
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <div id="tasksList">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdocs.moonbeam.network%2Fbuilders%2Fbuild%2Feth-api%2Fdev-env%2Ftruffle%2F&psig=AOvVaw39EuxZEXuDwUT3IPlNW9zz&ust=1670827975706000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKC5oLP98PsCFQAAAAAdAAAAABAE" href="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--SCRIPTS-->
+    <script src="./libs/@truffle/contract/browser-dist/truffle-contract.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./ui.js"></script>
+
+</body>
+
+</html>

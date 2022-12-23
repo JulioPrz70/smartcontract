@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Tablero</title>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+
+        <!--Inicio de NavBar-->
+        <div id="sidebar-wrapper">
+
+            <div class="sidebar-heading text-center py-4 px-4 primary-text fs-4 fw-bold text-uppercase border-button">
+                <img src="logo.PNG" width="100" alt=""> <br><br>
+                Monkey Code Lab
+            </div>
+
+            <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item list-group-item-action bg-transparent second-text active">
+                    <h4>Menu</h4>
+                </a>
+                <a href="#"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold text-white-50">
+                    <i class="fas fa-home me-2"></i>Dashboard
+                </a>
+                <a href="#"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold text-white-50">
+                    <i class="fas fa-user me-2"></i>Clientes
+                </a>
+                <a href="login.html"
+                    class="list-group-item list-group-item-action bg-transparent second-text fw-bold text-white-50">
+                    <i class="fas fa-arrow-right me-2"></i>Salir
+                </a>
+            </div>
+        </div>
+
+        <!--Fin de NavBar-->
+
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-4 px-4">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-align-left primary-text fs-4 me-3" id="menu-toggle"></i>
+                    <h2 class="fs-2 m-0">Tablero</h2>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--INICIO NOMBRE LOGUEADO-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item-dropdown">
+                            <a href="#" class="nav-link dropdown-toggle second-text fw-bold" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user me-2"></i>Julio Perez
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a href="#" class="dropdown-item">Perfil</a></li>
+                                <li><a href="#" class="dropdown-item">Configuración</a></li>
+                                <li><a href="#" class="dropdown-item">Cerrar sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--FIN NOMBRE LOGUEADO-->
+            </nav>
+            <h4>Gestione su información</h4>
+            <div class="container-fluid px-5">
+                <div class="row g-3 my-2">
+
+                    <div class="col-md-5 d-flex">
+                        <div class="p-3 bg-black shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <i class="fas fa-users fs-1 primary-text secondary-bg p-4"></i>
+                            <div class="row">
+                                <a href="#"
+                                    class="list-group-item list-group-item-action second-text fw-bold text-white">
+                                    <p class="fs-5">Clientes</p>
+                                    <h3 class="fs-2">157</h3>
+                                </a>
+                                <div class="col">
+                                    <p class="fs-5">Activos</p>
+                                    <h3 class="fs-2">150</h3>
+                                </div>
+                                <div class="col">
+                                    <p class="fs-5">Inactivos</p>
+                                    <h3 class="fs-2">7</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="p-3 bg-black shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <i class="fas fa-users fs-1 primary-text secondary-bg p-4"></i>
+                            <div class="row">
+                                <a href="#"
+                                    class="list-group-item list-group-item-action second-text fw-bold text-white">
+                                    <p class="fs-5">Servicios</p>
+                                    <h3 class="fs-2">7</h3>
+                                </a>
+                                <a href="#nue">
+                                    <p class="fs-5 second-text fw-bold text-white-50">Nuevo</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 d-flex">
+                        <div class="p-3 bg-black shadow-sm d-flex justify-content-around align-items-center rounded">
+                            <i class="fas fa-users fs-1 primary-text secondary-bg p-4"></i>
+                            <div class="row">
+                                <a href="#"
+                                    class="list-group-item list-group-item-action second-text fw-bold text-white">
+                                    <p class="fs-5">Contratos</p>
+                                    <h3 class="fs-2">15</h3>
+                                </a>
+
+                                <div class="col">
+                                    <a href="#new" class="second-text fw-bold text-white-50">
+                                        <p class="fs-5">Nuevo</p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a href="#ter">
+                                        <p class="fs-5 second-text fw-bold text-white-50">Terminados</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Proceso para Ocultar el menú-->
+    <script>
+        var el = document.getElementById("wrapper")
+        var toggleButton = document.getElementById("menu-toggle")
+
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled")
+        }
+    </script>
+</body>
+
+</html>
